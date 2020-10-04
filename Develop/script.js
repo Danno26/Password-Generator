@@ -22,14 +22,15 @@ function generatePassword() {
     //let password = "";
 
     //create prompt for password length
-    var lengthAnswer = prompt("Please enter the password length:", "8 - 128 characters");
+    var lengthAnswer = prompt("Please enter the password length:", '8 - 128 characters');
+
     if (lengthAnswer != null && lengthAnswer != '') {
         confirm("You chose " + lengthAnswer);
         if (isNaN(lengthAnswer)) {
             alert("Must input numbers");
             return false;
-        } else() {
-            confirm("You chose " + lengthAnswer "!")
+        } else =>{
+            confirm("You chose " + lengthAnswer + "!")
             console.log(lengthAnswer);
         }
     };
