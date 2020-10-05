@@ -5,6 +5,7 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
     var password = generatePassword();
     var passwordText = document.querySelector("#password");
+
     passwordText.value = password;
 }
 
@@ -80,7 +81,7 @@ function generatePassword() {
         var randomPass = newPassString.charAt(Math.floor(Math.random() * newPassString.length));
         password = password.concat(randomPass);
     }
-
+    return password;
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
